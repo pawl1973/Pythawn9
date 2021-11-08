@@ -5,10 +5,10 @@ from flask_restful import Api, Resource,reqparse
 from flask_jwt import JWT,jwt_required
 from flask_sqlalchemy import SQLAlchemy
 
-uri = os.getenv("DATABASE_URL")  # or other relevant config var
-if uri.startswith("postgres://"):
-    uri = uri.replace("postgres://", "postgresql://", 1)
-
+# uri = os.getenv("DATABASE_URL")  # or other relevant config var
+# if uri.startswith("postgres://"):
+#     uri = uri.replace("postgres://", "postgresql://", 1)
+uri='postgres://eyofazopnldnxe:fae394e67221fa3f8b54595d931344c650d6aec8a9a8ed824ffbae901f12c247@ec2-3-219-154-115.compute-1.amazonaws.com:5432/dab9rp0ap4erui'
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\pama\\PycharmProjects\\pythonProject\\API8\\data.db'
