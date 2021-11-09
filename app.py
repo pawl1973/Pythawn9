@@ -6,7 +6,7 @@ from flask_jwt import JWT,jwt_required
 from flask_sqlalchemy import SQLAlchemy
 
 uri = os.getenv("DATABASE_URL")  # or other relevant config var
-if uri.startswith("postgres://"):
+# if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://", 1)
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
